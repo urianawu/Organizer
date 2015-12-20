@@ -19,7 +19,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		startParent = transform.parent;
 		GetComponent<CanvasGroup> ().blocksRaycasts = false;
 		canvas = GameObject.FindGameObjectWithTag("UI Canvas").transform;
-		transform.parent = canvas;
+		transform.SetParent(canvas);
 	}
 	
 	#endregion
